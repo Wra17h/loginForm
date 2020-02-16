@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+	<meta charset="utf-8">
+	<title>Login form</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<body class="index-page"></body>
+<div class="body__container">
+	<div class="header">
+	</div>
+	<div class="auth">
+		<div class="auth__container">
+			<div class="auth__header">
+				<h1 class="header__title font-weight_bold">Log In</h1>
+			</div>
+			<form class="auth-form" method="post" name="authForm">
+				<input class="auth-form__input auth-form__input-email font-weight_medium" type="email" value="user@example.com"
+					placeholder="E-Mail" name="email">
+				<input class="auth-form__input auth-form__input-pass font-weight_medium" type="password" value="mercdev"
+					name="password">
+				<div class="error auth-form__error" hidden>
+				</div>
+				<button class="button auth-form__button font-weight_medium" value="Login">Login</button>
+			</form>
+		</div>
+	</div>
+	<div class="app-container__body user-profile" hidden>
+		<img class="user-profile__avatar" alt="User avatar" />
+		<strong class="user-profile__name"></strong>
+		<button class="user-profile__logout button">
+			Logout
+		</button>
+	</div>
+</div>
+<script src="js/script.js"></script>
+</head>
+
+</html>
